@@ -2,3 +2,11 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+Objective: Program that counts the number of itmes a hardware device scans to sort for boxing packages into cases.
+Program should print numbers from 2 to 50, counting by 2s
+Specifications: Each package = 2 products; Each case can only fit 50 product packages. 
+
+1. Set variable for scanned items. scanned = 0
+2. For each scan event, increase {scanned} by two until scanned = 50
+3. Loop steps 1 and 2 to accomodate scanning events for all items
+

@@ -2,3 +2,27 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+
+Objective: Guess the Number Game
+Specifications: Player has 3 tries to guess a number between 1 and 10 chosen randomly by the computer
+
+1. Generate random number between 1 and 10. 
+2. Store randomly generated number in variable (randnumber).
+3. Prompt User for guess (Input), restricting response to a number between 1 and 10.
+4. Store user response in variable (userreponse).
+5. Set variable for guess count (guesscounter) to 1. 
+6. Apply conditional logic comparing userresponse to randnumber.
+    If userreponse != randnumber AND guesscounter < 3:
+        Print "Incorrect! Try again! {3 - guesscounter} guesses remaining!"
+        Repeat step 4
+        Increase guesscounter by 1
+    If userreponse != randnumber AND guesscounter = 3:
+        Print "Incorrect! Try again! Final guess!"
+        Repeat step 4
+        Increase guesscounter by 1
+    If userreponse == randnumber:
+        Print "Congratulations! You've guessed correctly"
+        End program.
+    If guesscounter > 3 AND userreponse != randnumber:
+        Print "Incorrect! Better luck next time!"
+        End program.

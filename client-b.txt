@@ -2,3 +2,37 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+Objective: Develop a mapping application to find a specific location in a large warehouse store for a customer.
+Restrictions: Customer can move north, south, east, or west
+
+1. Establish coordinates for accessible area of warehouse store. Determine width of each grid created by coordinate system.
+2. Compile and store item list and coordinates within accessible area
+3. Establish user location and store in xcurr and ycurr variables.
+4. Prompt user for input requesting name of item that they are looking for
+5. Loop through item list to determine coordinates for user destination. 
+6. Set coordinates to xdest and ydest variables
+7. If xcurr > xdest
+    Calculate distance variable: (xcurr-xdest) * width from step 1
+    Instruct user to move west by {distance}
+   If xcurr < xdest
+    Calculate distance variable: (xdest-xcurr) * width from step 1
+    Instruct user to move east by {distance}
+   If ycurr > ydest
+    Calculate distance variable: (ycurr-ydest) * width from step 1
+    Instruct user to move north by {distance}
+   If ycurr < ydest
+    Calculate distance variable: (ydest-ycurr) * width from step 1
+    Instruct user to move south by {distance}
+
+
+
+         X
+      1 2 3 4
+ Y  1     U
+    2 
+    3   I
+    4
+
+User is at 3,1
+Item is at 2,3
+
